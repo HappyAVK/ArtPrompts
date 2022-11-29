@@ -1,6 +1,13 @@
 import functions
 import PySimpleGUI as GUI
 import time
+import os
+
+if not os.path.exists("prompts.txt"):
+    with open("prompts.txt", "w") as file:
+        pass
+
+
 GUI.theme("DarkPurple4")
 clock = GUI.Text(key="clock")
 label = GUI.Text("Type in an Art Prompt")
