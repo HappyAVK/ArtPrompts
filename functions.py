@@ -2,7 +2,7 @@ FILEPATH = "prompts.txt"
 
 
 def get_prompts(filepath=FILEPATH):
-    """HNNNNNG AQUA CUTE CUTE CUTE"""
+
     with open(filepath, "r") as file:
         local_prompts = file.readlines()
     return local_prompts
